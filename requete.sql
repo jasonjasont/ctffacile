@@ -1,0 +1,1 @@
+INSERT INTO epreuve VALUES (NULL, 'ctffacile', '{ctf:jenesuispasunflag}', 'divers/ctffacile', 1, 1);
