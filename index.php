@@ -9,7 +9,7 @@ require_once '../../include/haut.php';
 
 
 // Requête SQL 
-$sql = "INSERT INTO epreuve VALUES (NULL, 'Nom de l\'épreuve', '{ctf:jenesuispasunflag}', 'divers/ctffacile', 1, 1)";
+$sql = "INSERT INTO epreuve VALUES (NULL, 'ctffacile', '{ctf:jenesuispasunflag}', 'divers/ctffacile', 1, 1)";
 
 ?>
 
