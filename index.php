@@ -1,4 +1,12 @@
+
+
+
 <!DOCTYPE html>
+<?php
+$epreuve_id = 24;        // <= Mettre ici l'id de l'epreuve
+require_once '../../include/haut.php';
+?>
+
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -42,7 +50,9 @@
   </style>
 </head>
 <body>
-  <h1>Bienvenue au CTF Facile</h1>
+
+
+  <h2>CTF Facile</h2>
   <p>Connectez-vous pour accéder à votre tableau de bord.</p>
   <a href="loginlogin.php" id="randomButton">Se connecter</a>
 
@@ -63,6 +73,8 @@
 
       // Une fois le lutin en prison il nous donne un indice pour la suite : Le nombre 24 est la solution
     });
+
+
   </script>
 </body>
 </html>
