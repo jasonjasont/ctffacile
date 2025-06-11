@@ -1,5 +1,5 @@
 <?php
-// Vérifie si le cookie "role" est défini et si l'utilisateur est admin
+
 if (!isset($_COOKIE['role']) || $_COOKIE['role'] !== 'admin') {
     http_response_code(403); // Accès refusé
     echo "Accès refusé. Vous devez être admin.";
@@ -16,6 +16,7 @@ if (!isset($_COOKIE['role']) || $_COOKIE['role'] !== 'admin') {
 <body>
   <h1>Bienvenue dans la zone admin</h1>
   <p>Félicitations, vous avez trouvé la faille et accédé à la page admin !</p>
-  <p>Flag : CTF{jenesuispasunflag}</p>
+  <script>//Le flag est dans une langue inconue, si vous voulez un indice, chercher dans la 1ère page</script>
+  <p>PkvfXwY6GCLSPlroXU5ja3Tna3Zfa3TsXkvfX30=</p>
 </body>
 </html>

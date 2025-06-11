@@ -3,11 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CTF Facile !</title>
+  <title>CTF Facile</title>
+  <style>
+    
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: white; 
+      position: relative;
+      overflow: hidden; 
+    }
+
+    h1, p {
+      text-align: center;
+      color: black; 
+    }
+
+    
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: white; 
+      background-color: white; 
+      border: 1px solid white; 
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      position: absolute; 
+    }
+
+    
+    a:hover {
+      color: black; 
+      background-color: lightgray; 
+      border-color: gray; 
+    }
+  </style>
 </head>
 <body>
   <h1>Bienvenue au CTF Facile</h1>
-  <p>Première épreuve, comment on se connecte ?</p>
-  <a href="login.php">Se connecter</a>
+  <p>Connectez-vous pour accéder à votre tableau de bord.</p>
+  <a href="loginlogin.php" id="randomButton">Se connecter</a>
+
+  <script>
+    // Fonction qui permet de trouvé un lutin
+    document.addEventListener("DOMContentLoaded", function () {
+      const button = document.getElementById("randomButton");
+      const bodyWidth = document.body.clientWidth;
+      const bodyHeight = document.body.clientHeight;
+
+      // Une fois le lutin trouvé le magicien le capture
+      const randomX = Math.floor(Math.random() * (bodyWidth - button.offsetWidth));
+      const randomY = Math.floor(Math.random() * (bodyHeight - button.offsetHeight));
+
+      // Une fois le lutin capturé, on le place en prison
+      button.style.left = `${randomX}px`;
+      button.style.top = `${randomY}px`;
+
+      // Une fois le lutin en prison il nous donne un indice pour la suite : Le nombre 24 est la solution
+    });
+  </script>
 </body>
 </html>

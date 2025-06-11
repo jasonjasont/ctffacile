@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <?php if (isset($error)) : ?>
     <p style="color: red;"><?= htmlspecialchars($error) ?></p>
   <?php endif; ?>
-  <form action="login.php" method="POST">
+  <form action="loginlogin.php" method="POST">
     <label for="username">Nom d'utilisateur :</label>
     <input type="text" id="username" name="username" required>
     <br>
