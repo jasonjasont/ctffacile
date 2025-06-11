@@ -5,6 +5,12 @@
 <?php
 $epreuve_id = 24;        // <= Mettre ici l'id de l'epreuve
 require_once '../../include/haut.php';
+
+
+
+// Requête SQL 
+$sql = "INSERT INTO epreuve VALUES (NULL, 'Nom de l\'épreuve', '{ctf:jenesuispasunflag}', 'divers/ctffacile', 10)";
+
 ?>
 
 <html lang="fr">
